@@ -6,7 +6,7 @@ from aws_cdk import (
 )
 
 from aws_cdk.aws_s3_deployment import BucketDeployment, Source
-import random
+
 
 
 class S3StaticHostingStack(core.Stack):
