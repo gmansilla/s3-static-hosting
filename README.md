@@ -72,6 +72,9 @@ Our website is hosted in the bucket with the name "s3-static-hosting-myhostingbu
 
 The other bucket does not have public access and it's used by cdk to perform the deployment of the web assets. You shouldn't need to interact with this bucket.
 
+## Destroying the stack ##
 
+After you experiment with this project, you should delete the contents of your buckets (and any versions of objects) and run ```$cdk destroy```
+Note: this command will attempt to destroy all components created and can fail if you still have objects in your buckets.
 
 Enjoy!
