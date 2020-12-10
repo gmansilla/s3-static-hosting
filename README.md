@@ -1,12 +1,13 @@
 
-# Welcome to your CDK Python project!
+# Welcome to your Static Web Hosting on S3 Project!
 
 This is a project for deploying a S3 bucket with web hosting enabled and a simple HTML page.
 
 ![](diagrams/s3HostingDiagram.png) 
 
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+We'll be using [CDK](https://docs.aws.amazon.com/cdk/latest/guide/home.html) for creating our infrastructure.
+
 
 This project is set up like a standard Python project.  The initialization
 process also creates a virtualenv within this project, stored under the `.venv`
