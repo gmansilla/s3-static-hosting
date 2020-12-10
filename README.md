@@ -1,7 +1,10 @@
 
 # Welcome to your CDK Python project!
 
-This is a blank project for Python development with CDK.
+This is a project for deploying a S3 bucket with web hosting enabled and a simple HTML page.
+
+
+
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -55,16 +58,14 @@ And we're ready to deploy!
 $cdk deploy
 ```
 
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
+Once the deployment is done, you can open your AWS Console and navigate to S3.
+You'll see two buckets created:
+"s3-static-hosting-myhostingbucketXYZ" and "cdktooljit-stagingbucket-XYZ" (XYZ is just a placeholder, you'll see you get a random string)
 
-## Useful commands
+Our website is hosted in the bucket with the name "s3-static-hosting-myhostingbucketXYZ". If you want to modify the initial HTML or add more assets, you'll have to do that in the [website-dist](https://github.com/gmansilla/s3-static-hosting/tree/main/website-dist) directory
 
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
+The other bucket does not have public access and it's used by cdk to perform the deployment of the web assets. You shouldn't need to interact with this bucket.
+
+
 
 Enjoy!
