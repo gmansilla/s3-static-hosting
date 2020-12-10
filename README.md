@@ -8,6 +8,11 @@ This is a project for deploying a S3 bucket with web hosting enabled and a simpl
 
 We'll be using [CDK](https://docs.aws.amazon.com/cdk/latest/guide/home.html) for creating our infrastructure.
 
+First, make sure you clone this project
+
+```
+$git clone https://github.com/gmansilla/s3-static-hosting.git && cd s3-static-hosting
+```
 
 This project is set up like a standard Python project.  The initialization
 process also creates a virtualenv within this project, stored under the `.venv`
@@ -45,12 +50,6 @@ Prior to deploying, we need to bootstrap CDK
 
 ```
 $cdk bootstrap
-```
-
-At this point you can now synthesize the CloudFormation template for this code.
-
-```
-$cdk synth
 ```
 
 And we're ready to deploy!
