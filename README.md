@@ -59,6 +59,11 @@ And we're ready to deploy!
 $cdk deploy
 ```
 
+Pay attention to the Output of this command as this will tell you the URL of your new website.
+
+The URL should be next to ```s3-static-hosting.S3bucketwebsiteurl```
+
+## Last comments ##
 Once the deployment is done, you can open your AWS Console and navigate to S3.
 You'll see two buckets created:
 "s3-static-hosting-myhostingbucketXYZ" and "cdktooljit-stagingbucket-XYZ" (XYZ is just a placeholder, you'll see you get a random string)
