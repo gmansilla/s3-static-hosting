@@ -26,3 +26,10 @@ class S3StaticHostingStack(core.Stack):
             sources=[Source.asset("./website-dist")],
             destination_bucket=website_bucket
         )
+        
+        core.CfnOutput(
+            self,
+            "S3bucket_website_url",
+            value=website_bucket.bucket_website_url,
+            description="S3 Bucket website url"
+        )
