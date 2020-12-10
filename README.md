@@ -46,7 +46,13 @@ $cdk bootstrap
 At this point you can now synthesize the CloudFormation template for this code.
 
 ```
-$ cdk synth
+$cdk synth
+```
+
+And we're ready to deploy!
+
+```
+$cdk deploy
 ```
 
 To add additional dependencies, for example other CDK libraries, just add
