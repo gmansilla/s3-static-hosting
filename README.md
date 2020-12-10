@@ -3,7 +3,7 @@
 
 This is a project for deploying a S3 bucket with web hosting enabled and a simple HTML page.
 
-
+![](diagrams/s3HostingDiagram.png) 
 
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
